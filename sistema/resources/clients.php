@@ -10,10 +10,6 @@ if (!isset($_SESSION['user_id'])) {
 
 $oClient = new \app\sistema\Client();
 
-echo '<pre>';
-print_r($oClient);
-echo '</pre>';
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['fEditClient'])) {
   $sEditClientId    = $_POST['editClientId'];
   $sEditClientName  = $_POST['editClientName'];
