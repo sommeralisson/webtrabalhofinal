@@ -1,0 +1,20 @@
+-- Copiando estrutura para tabela mysql01.CLIENTE
+CREATE TABLE IF NOT EXISTS `CLIENTE` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `CODIGO` int(11) DEFAULT NULL,
+  `NOME` varchar(50) DEFAULT NULL,
+  `SOBRENOME` varchar(50) DEFAULT NULL,
+  `DATA_NASCIMENTO` date DEFAULT NULL,
+  `EMAIL` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+
+-- Exportação de dados foi desmarcado.
+
+-- Copiando estrutura para tabela mysql01.USUARIO
+CREATE TABLE IF NOT EXISTS `USUARIO` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `USERNAME` varchar(255) NOT NULL,
+  `PASSWORD` varchar(255) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
